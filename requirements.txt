@@ -1,1 +1,27 @@
-requirements.txt 
+Project : Testnet Faucet Interface - Request testnet XLM with one click
+
+
+Functions : Connect a Stellar wallet and fund your wallet.
+Balance displays correctly
+Send an XLM transaction on testnet
+
+Requirements : 
+
+1. Wallet Setup
+Set up the Freighter wallet
+Use Stellar Testnet
+2. Wallet Connection
+Implement wallet connect functionality
+Implement wallet disconnect functionality
+3. Balance Handling
+Fetch the connected wallet’s XLM balance
+Display the balance clearly in the UI
+4. Transaction Flow
+Send an XLM transaction on the Stellar testnet
+Show transaction feedback to the user:
+Success or failure state
+Transaction hash or confirmation message
+5. Development Standards
+Examples: UI setup, wallet integration, balance fetch, transaction logic, error handling
+
+
