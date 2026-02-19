@@ -164,6 +164,17 @@ export async function fetchBalance(
   }
 }
 
+// Parse error response from friendbot
+function parseFriendbotError(errorText: string): string {
+  try {
+    const errorJson = JSON.parse(errorText);
+    // Return just the detail message if available
+    return errorJson.detail || errorJson.title || errorText;
+  } catch {
+    return errorText;
+  }
+}
+
 // Fund account using friendbot
 export async function fundAccount(
   publicKey: string
@@ -173,9 +184,10 @@ export async function fundAccount(
     
     if (!response.ok) {
       const errorText = await response.text();
+      const parsedError = parseFriendbotError(errorText);
       return {
         success: false,
-        error: `Friendbot error: ${response.status} - ${errorText}`,
+        error: parsedError,
       };
     }
     
