@@ -22,7 +22,8 @@ A simple and user-friendly web application that allows users to receive XLM (Ste
 
 1. **Clone the repository** (if applicable) or navigate to the project directory:
    ```bash
-   cd d:/Steller/xlm-faucet-stellar
+   git clone https://github.com/Subho4531/xlm-faucet-stellar
+   cd xlm-faucet-stellar
    ```
 
 2. **Install dependencies**:
