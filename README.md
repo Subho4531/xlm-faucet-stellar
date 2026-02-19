@@ -50,17 +50,18 @@ A simple and user-friendly web application that allows users to receive XLM (Ste
 
 ## Screenshots
 
-### Wallet Connected State
-![Wallet Connected](screenshots/wallet-connected.png)
-*The wallet is connected and ready to interact with the faucet.*
+### Home Screen
+![Home Screen](screenshots/home.png)
+*Displays the main interface where the user can connect their wallet and interact with the faucet.*
 
-### Balance Displayed
-![Balance Displayed](screenshots/balance-displayed.png)
-*User's XLM balance is shown after wallet connection.*
+### Airdrop Successful
+![Airdrop Successful](screenshots/airdropsucessful.png)
+*Shows the confirmation message after a successful XLM airdrop transaction.*
 
-### Successful Testnet Airdrop
-![Transaction Success](screenshots/transaction-success.png)
-*A successful transaction from the faucet to the user's wallet.*
+### Airdrop Failed
+![Airdrop Failed](screenshots/airdropfailed.png)
+*Displays an error message indicating that the faucet transaction was not completed successfully as wallet is already funded*
+
 
 
 
@@ -98,8 +99,6 @@ xlm-faucet-stellar/
 ## Notes
 
 - This application operates on the **Stellar Testnet** only. Do not send real funds.
-- The faucet may have rate limits to prevent abuse.
-- Ensure Freighter is set to **Testnet** mode before connecting.
 - Transactions require a small amount of XLM for the base fee (already covered by the faucet).
 
 ## License
